@@ -1,0 +1,11 @@
+# gfg
+int sumElement(int arr[],int n)
+{
+    //Your code here
+    int c=0,i;
+    for(i=0;i<n;i++)
+    {
+        c=c+arr[i];
+    }
+    return c;
+}
