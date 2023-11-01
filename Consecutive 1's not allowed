@@ -1,0 +1,25 @@
+ll countStrings(int n) {
+	    // code here
+	    ll a=2;
+	    ll b=3;
+	    ll mod=1e9+7;
+	    if(n==1)
+	    {
+	        return a;
+	    }
+	    else if(n==2)
+	    {
+	        return b;
+	    }
+	    else
+	    {
+	        n=n-2;
+	       while(n)
+	       {
+	           ll c=(a+b)%mod;
+	           a=b;
+	           b=c;
+	           n--;
+	       }
+	    }
+	    return b;
